@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class HealthScript : MonoBehaviour
 {
     [SerializeField] public float startingHealth; //Starting Health For the Character
 
