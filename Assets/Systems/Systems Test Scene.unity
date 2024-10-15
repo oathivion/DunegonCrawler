@@ -169,8 +169,9 @@ GameObject:
   m_Component:
   - component: {fileID: 250473224}
   - component: {fileID: 250473223}
+  - component: {fileID: 250473225}
   m_Layer: 0
-  m_Name: DoT Manager
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,6 +209,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250473225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250473222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d127f2bc84af49f4f830a008529659a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &327562625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1629,19 +1642,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5865278, y: 0.36506104}
   m_EdgeRadius: 0
---- !u!114 &1465161475617448550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465161475617448553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd146093740c5d43b5909c7913f3109, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!1 &1465161475617448553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,13 +1651,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1465161475617448555}
-  - component: {fileID: 1465161475617448550}
   - component: {fileID: 1465161475617448554}
   - component: {fileID: 1465161475617448549}
   - component: {fileID: 1465161475617448548}
   - component: {fileID: 1899976371967463496}
   - component: {fileID: 1899976371967463497}
   - component: {fileID: 1899976371967463498}
+  - component: {fileID: 1899976371967463499}
   m_Layer: 6
   m_Name: PF Player
   m_TagString: Player
@@ -1784,6 +1784,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 20
+--- !u!114 &1899976371967463499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465161475617448553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49e70739d21b654ca45bebfd4ca94e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  whatPlayerShouldILoad: default
 --- !u!1001 &4494571785879334693
 PrefabInstance:
   m_ObjectHideFlags: 0
