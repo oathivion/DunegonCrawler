@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d127f2bc84af49f4f830a008529659a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatPlayerShouldILoad: default
 --- !u!1001 &327562625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1796,8 +1797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49e70739d21b654ca45bebfd4ca94e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  whatPlayerShouldILoad: default
+  baseSpeed: -7
 --- !u!1001 &4494571785879334693
 PrefabInstance:
   m_ObjectHideFlags: 0

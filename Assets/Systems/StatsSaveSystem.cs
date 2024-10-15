@@ -11,10 +11,10 @@ public class PlayerStats
     public int experience; // Current Experience
     public int level; // Current level
     public int strength; // Current Strength Stat
-    public int dexterity; // Current Dexterity Stat
+    public int dexterity; // Current Dexterity Stat (Mainly Used in Speed Calculations)
     public int constitution; // Current Constitution Stat
-    public string weaponOne; // Current weapon one
-    public string weaponTwo; // Current Weapon Two
+    public string weaponOne; // Reserved For melee Weapon
+    public string weaponTwo; // Reserved For Ranged Weapon
     public string armor; // Current Armor Equipped
     public string statItemOne; // First Item that can modify stats
     public string statItemTwo;
@@ -23,7 +23,90 @@ public class PlayerStats
 
 public class StatsSaveSystem : MonoBehaviour
 {
-    private static readonly string encryptionKey = "WkmOknkz0BLkyC7p82NsivQ8NvwVor17"; 
+    public string activePlayer = "default";
+
+    private static readonly string encryptionKey = "WkmOknkz0BLkyC7p82NsivQ8NvwVor17"; //Encyrption Key. Please Don't Change. It will break my save data.
+    private PlayerStats loadedStats; 
+
+    void Awake ()
+    {
+        LoadActivePlayer();
+    }
+
+    public object GetStat (string whatStatToGet) { //Main Function to Get Player Stats From save File. It takes in a string Becaues of this you need to cast the result to the proper datatype.
+       return typeof(PlayerStats).GetField(whatStatToGet).GetValue(loadedStats); 
+    }
+
+    public void ModifyStat(string whatToModify, int byHowMuch) { //This Function Modifies an IntergerStat by adding it to a number. To Subtract use a negative number as input
+        var fieldInfo = typeof(PlayerStats).GetField(whatToModify);
+        if (fieldInfo != null) {
+            // Check if the field type is correct
+            if (fieldInfo.FieldType == typeof(int)) {
+                // Get the current value of the field
+                int currentValue = (int)fieldInfo.GetValue(loadedStats);
+                
+                // Add the value to the current field value
+                int newValue = currentValue + byHowMuch;
+
+                // Set the new value to the field
+                fieldInfo.SetValue(loadedStats, newValue);
+                
+                Debug.Log($"{whatToModify} updated: {currentValue} -> {newValue}");
+            }
+            else {
+                Debug.LogError($"{whatToModify} is not an integer and cannot be updated with a numeric value.");
+            }
+        }
+        else {
+            Debug.LogError($"Field {whatToModify} does not exist in PlayerStats.");
+        }
+
+    }
+
+    public void PermanitlyModifyStat (string whatToModify, int byHowMuch) { //Same Thing at Modify Stat, But saves it when it is done.
+        ModifyStat(whatToModify, byHowMuch);
+        SavePlayerStats(activePlayer, loadedStats);
+    }
+
+    public void EquipItem (string whatToReplace, string whatIsReplacingIt) {
+        var fieldInfo = typeof(PlayerStats).GetField(whatToReplace);
+        if(fieldInfo !=null) {
+            //Check If The field is the correct type
+            if(fieldInfo.FieldType == typeof(string)) {
+                fieldInfo.SetValue(loadedStats, whatIsReplacingIt);
+                Debug.Log($"{whatIsReplacingIt} was sucsesfully equiped in {whatToReplace} slot.");
+                SavePlayerStats(activePlayer, loadedStats);
+            }
+            else {
+                Debug.LogError($"{whatToReplace} is not a string and cannot be updated with a numeric value.");
+            }
+        }
+        else {
+            Debug.LogError($"Field {whatToReplace} does not exist in PlayerStats.");
+        }
+    }
+
+    private void LoadActivePlayer()
+        {
+            if (DoesSaveFileExist(activePlayer))
+            {
+                loadedStats = LoadPlayerStats(activePlayer);
+                if (loadedStats != null)
+                {
+                    Debug.Log("Player stats loaded successfully.");
+                }
+                else
+                {
+                    Debug.LogWarning("Failed to load player stats.");
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Save file does not exist.");
+                Debug.LogWarning("Either Make A New Player Or Create a New Player");
+                CreatePlayer(); //Temp Function for Testing
+            }
+        }
 
     private string GetSaveFilePath(string playerName)
     {
@@ -35,16 +118,16 @@ public class StatsSaveSystem : MonoBehaviour
         return File.Exists(GetSaveFilePath(playerName));
     }
 
-    // Method to save player stats
+    //Method to save player stats
     public void SavePlayerStats(string playerName, PlayerStats stats)
     {
-        // Convert stats to JSON
+        //Convert stats to JSON
         string json = JsonUtility.ToJson(stats);
 
-        // Encrypt the JSON string
+        //Encrypt the JSON string
         string encryptedData = Encrypt(json, encryptionKey);
 
-        // Write the encrypted data to a file
+        //Write the encrypted data to a file
         try
         {
             using (StreamWriter writer = new StreamWriter(GetSaveFilePath(playerName), false))
@@ -59,7 +142,7 @@ public class StatsSaveSystem : MonoBehaviour
         }
     }
 
-    // Method to load player stats
+    //Method to load player stats
     public PlayerStats LoadPlayerStats(string playerName)
     {
         string filePath = GetSaveFilePath(playerName);
@@ -95,7 +178,7 @@ public class StatsSaveSystem : MonoBehaviour
         }
     }
 
-    // AES encryption method
+    //AES encryption method
     private static string Encrypt(string plainText, string key)
     {
         byte[] keyBytes = Encoding.UTF8.GetBytes(key);
@@ -141,13 +224,13 @@ public class StatsSaveSystem : MonoBehaviour
         }
     }
 
-    // Optional: Get a list of available save files
+    //Get a list of available save files
     public string[] GetAvailableSaveFiles()
     {
         return Directory.GetFiles(Application.persistentDataPath, "*_playerdata.dat");
     }
 
-    // Optional: Method to delete a save file
+    //Method to delete a save file
     public void DeleteSaveFile(string playerName)
     {
         string filePath = GetSaveFilePath(playerName);
@@ -161,4 +244,24 @@ public class StatsSaveSystem : MonoBehaviour
             Debug.LogWarning($"Save file for {playerName} not found.");
         }
     }
+
+    private void CreatePlayer() { //This is a temporary script for testing purposes. Player Creation will be moved to a different script in the future.
+            PlayerStats playerStats = new PlayerStats {
+                playerName = "default",
+                maxHealth = 20,
+                experience = 0,
+                level = 0,
+                strength = 10,
+                dexterity = 10,
+                constitution = 10,
+                weaponOne = "sword",
+                weaponTwo = "sword",
+                armor = "none",
+                statItemOne = "none",
+                statItemTwo = "none",
+                statItemThree = "none"
+            };
+    
+            SavePlayerStats(activePlayer, playerStats);
+        }
 }
