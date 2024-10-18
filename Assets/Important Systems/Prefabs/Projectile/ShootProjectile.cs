@@ -8,7 +8,7 @@ public class ShootProjectile : MonoBehaviour
     [SerializeField] private Transform shootTransfrom; //Where to shoot from?
 
     void Update(){
-        if(Input.GetMouseButtonDown(0)) {
+        if(Input.GetMouseButtonDown(1)) {
             Shoot();
         }
     }
