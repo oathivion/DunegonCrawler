@@ -1,0 +1,19 @@
+{
+    "Items" :
+    [
+        {
+            "name" : "Filler",
+            "value" : 100,
+            "info" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos nascetur at augue per eros quam? Fringilla magnis maecenas consectetur nisl donec nisl, natoque laoreet. Semper dolor aptent quam ipsum porta ridiculus duis. Suspendisse condimentum nec mattis, himenaeos velit suspendisse integer leo.",
+            "damageRange" : [5, 6],
+            "attack" : 3
+        },
+        {
+            "name" : "Blade of the Devs",
+            "value" : 9999999,
+            "info" : "Destroy your enemies with the righteous rage of 3 hours of balance testing.",
+            "damageRange" : [9999999, 99999999],
+            "attack" : 9999999
+        }
+    ]
+}

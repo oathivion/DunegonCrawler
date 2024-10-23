@@ -1,0 +1,15 @@
+{
+    "Items" :
+    [
+        {
+            "name" : "Filler",
+            "value" : 100,
+            "info" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos nascetur at augue per eros quam? Fringilla magnis maecenas consectetur nisl donec nisl, natoque laoreet. Semper dolor aptent quam ipsum porta ridiculus duis. Suspendisse condimentum nec mattis, himenaeos velit suspendisse integer leo."
+        },
+        {
+            "name" : "Dev Gem",
+            "value" : 9999999999999999999,
+            "info" : "have fun. -LostShore"
+        }
+    ]
+}
