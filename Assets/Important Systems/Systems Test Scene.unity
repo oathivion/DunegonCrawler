@@ -232,8 +232,8 @@ GameObject:
   m_Component:
   - component: {fileID: 257295358}
   - component: {fileID: 257295359}
-  - component: {fileID: 257295361}
   - component: {fileID: 257295362}
+  - component: {fileID: 257295363}
   m_Layer: 6
   m_Name: Hand
   m_TagString: Untagged
@@ -249,8 +249,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257295357}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0.6600001, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15, y: 0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -301,18 +301,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &257295361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257295357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 603317319cbc5054688bf65b778cca36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &257295362
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -365,6 +353,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &257295363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257295357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae0c16617ff484395f2c1981cb8e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jabDistance: 0.66
+  jabTime: 1
+  damage: 20
+  whoShouldIHitTag: Enemy
+  whoShouldIIngnoreTag: Player
 --- !u!1 &291129980
 GameObject:
   m_ObjectHideFlags: 0
