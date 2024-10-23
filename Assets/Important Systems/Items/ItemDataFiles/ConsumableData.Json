@@ -1,0 +1,26 @@
+{
+    "Items" :
+    [
+        {
+            "name" : "Filler",
+            "value" : 100,
+            "info" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos nascetur at augue per eros quam? Fringilla magnis maecenas consectetur nisl donec nisl, natoque laoreet. Semper dolor aptent quam ipsum porta ridiculus duis. Suspendisse condimentum nec mattis, himenaeos velit suspendisse integer leo.",
+            "modification" : "Modification.Health",
+            "valueToRestore" : 10
+        },
+        {
+            "name" : "Dev Health Potion",
+            "value" : 9999999,
+            "info" : "So you can't die while testing fights. If you have this as a player I don't know sell it or something you shouldn't have it",
+            "modification" : "Modification.Health",
+            "valueToRestore" : 9999999
+        },
+        {
+            "name" :"Dev Mana Potion",
+            "value" : 9999999,
+            "info" :"So you can keep testing spells. If you have this as a player I don't know sell it or something you shouldn't have it",
+            "modification" : "Modification.Magic",
+            "valueToRestore" : 9999999
+        }
+    ]
+}
