@@ -4,6 +4,6 @@ using UnityEngine;
 using XNode;
 
 [CreateAssetMenu]
-public class BehaviorGraph : NodeGraph { 
-	
+public class BehaviorGraph : NodeGraph {
+	BaseNode current;
 }
