@@ -7,12 +7,17 @@ public class Sword : MonoBehaviour
 {
     private float facingWhatDirection; // Change to float to avoid precision issues
     private Vector2 facingWhatVector; //Variable used For Calculations
+    private Collider2D swordCollider;
     [SerializeField] private float jabDistance; // How Far to Jab
     [SerializeField] private float jabTime; //How long to jab
     [SerializeField] private float damage; // How Much Damage Per Jab
     [SerializeField] private string whoShouldIHitTag; //What Tag should I check for when compairing damage
     [SerializeField] private string whoShouldIIngnoreTag; //Who should I ignore.
 
+    void Awake () {
+        swordCollider = GetComponent<Collider2D>();
+        swordCollider.enabled = false;
+    }
     void Update () {
         if (Input.GetKey(KeyCode.A)) { //Left
             facingWhatDirection = -90f;
@@ -40,6 +45,8 @@ public class Sword : MonoBehaviour
     }
 
     private void JabSword () {
+
+        swordCollider.enabled = true;
         facingWhatVector = ConvertFacingWhatDirectionToVector2(facingWhatDirection);
         StartCoroutine(JabSwordMovement());
     }
@@ -62,6 +69,7 @@ public class Sword : MonoBehaviour
     // After the jab is complete, reset the sword to its original position
     yield return new WaitForSeconds(0.1f);  // Optional small delay before resetting
     transform.position = startPos;  // Reset position
+    swordCollider.enabled = false;
 }
 
 

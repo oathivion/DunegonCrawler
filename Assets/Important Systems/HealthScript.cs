@@ -7,7 +7,7 @@ public class HealthScript : MonoBehaviour
 {
     [SerializeField] public float startingHealth; //Starting Health For the Character
 
-     public float currentHealth; //Current Health for the Character
+    private float currentHealth; //Current Health for the Character
 
     void Start () {
         currentHealth = startingHealth; //Initializes Current Health

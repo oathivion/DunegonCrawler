@@ -254,12 +254,13 @@ public class StatsSaveSystem : MonoBehaviour
                 strength = 10,
                 dexterity = 10,
                 constitution = 10,
-                weaponOne = "sword",
-                weaponTwo = "sword",
-                armor = "none",
-                statItemOne = "none",
-                statItemTwo = "none",
-                statItemThree = "none"
+                weaponOne = "devSword",
+                weaponTwo = "devBow",
+                armor = "devArmor",
+                statItemOne = "devRing",
+                statItemTwo = "devAmulet",
+                statItemThree = "devCat"
+
             };
     
             SavePlayerStats(activePlayer, playerStats);
