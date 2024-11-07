@@ -27,4 +27,9 @@ public class HealthScript : MonoBehaviour
         Debug.Log(gameObject.name + "Is now Dead");
         return;
     }
+
+    public float GetHealth()
+    {
+        return currentHealth;
+    }
 }
