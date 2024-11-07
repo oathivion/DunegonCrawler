@@ -27,12 +27,13 @@ public class PlayerHealthTrack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float healthPercent = Mathf.Abs((playerHealth.startingHealth - playerHealth.currentHealth) / playerHealth.startingHealth);
+        /*float healthPercent = Mathf.Abs((playerHealth.startingHealth - playerHealth.currentHealth) / playerHealth.startingHealth);
         healthText.GetComponent<TextMeshProUGUI>().text = playerHealth.currentHealth.ToString() + "/" + playerHealth.startingHealth.ToString();
         currentBarWidth = maxBarWidth * (1 - healthPercent);
         healthBar.transform.localScale = new Vector2(currentBarWidth, healthBar.transform.localScale.y);
         healthBar.transform.localPosition = new Vector2(healthBarStartPosition.x - (healthPercent/2) * 100 , healthBarStartPosition.y);
         healthBarCurrentPosition = healthBar.transform.localPosition;
+        */
 
     }
 }
