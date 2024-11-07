@@ -260,6 +260,7 @@ public class StatsSaveSystem : MonoBehaviour
                 statItemOne = "devRing",
                 statItemTwo = "devAmulet",
                 statItemThree = "devCat"
+
             };
     
             SavePlayerStats(activePlayer, playerStats);

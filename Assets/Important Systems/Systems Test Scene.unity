@@ -221,12 +221,16 @@ GameObject:
   - component: {fileID: 76512776}
   m_Layer: 0
   m_Name: EventSystem
+  - component: {fileID: 40578122}
+  - component: {fileID: 40578124}
+  - component: {fileID: 40578123}
+  m_Layer: 5
+  m_Name: Bar Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &76512776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2206,6 +2210,7 @@ GameObject:
   m_PrefabInstance: {fileID: 791244739}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1529688358
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

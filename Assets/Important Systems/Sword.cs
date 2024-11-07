@@ -18,7 +18,6 @@ public class Sword : MonoBehaviour
         swordCollider = GetComponent<Collider2D>();
         swordCollider.enabled = false;
     }
-
     void Update () {
         if (Input.GetKey(KeyCode.A)) { //Left
             facingWhatDirection = -90f;
@@ -46,6 +45,7 @@ public class Sword : MonoBehaviour
     }
 
     private void JabSword () {
+
         swordCollider.enabled = true;
         facingWhatVector = ConvertFacingWhatDirectionToVector2(facingWhatDirection);
         StartCoroutine(JabSwordMovement());
