@@ -11,16 +11,16 @@ public class PlayerHealthTrack : MonoBehaviour
 
     //Helth Bar variables
     [SerializeField] GameObject healthBar;
-    public Vector2 healthBarPosition;
+    public Vector2 healthBarStartPosition;
     public float maxBarWidth;
     public float currentBarWidth;
-
+    public Vector2 healthBarCurrentPosition;
 
     // Start is called before the first frame update
     void Start()
     {
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthScript>();
-        healthBarPosition = healthBar.transform.localPosition;
+        healthBarStartPosition = healthBar.transform.localPosition;
         maxBarWidth = healthBar.transform.localScale.x;
     }
 
@@ -31,7 +31,8 @@ public class PlayerHealthTrack : MonoBehaviour
         healthText.GetComponent<TextMeshProUGUI>().text = playerHealth.currentHealth.ToString() + "/" + playerHealth.startingHealth.ToString();
         currentBarWidth = maxBarWidth * (1 - healthPercent);
         healthBar.transform.localScale = new Vector2(currentBarWidth, healthBar.transform.localScale.y);
-        healthBar.transform.localPosition = new Vector2(healthBarPosition.x - healthPercent * 100, healthBarPosition.y);
+        healthBar.transform.localPosition = new Vector2(healthBarStartPosition.x - (healthPercent/2) * 100 , healthBarStartPosition.y);
+        healthBarCurrentPosition = healthBar.transform.localPosition;
 
     }
 }
