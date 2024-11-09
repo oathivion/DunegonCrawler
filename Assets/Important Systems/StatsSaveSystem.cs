@@ -18,7 +18,6 @@ public class PlayerStats
     public string armor; // Current Armor Equipped
     public string statItemOne; // First Item that can modify stats
     public string statItemTwo;
-    public string statItemThree;
 }
 
 public class StatsSaveSystem : MonoBehaviour
@@ -259,8 +258,6 @@ public class StatsSaveSystem : MonoBehaviour
                 armor = "devArmor",
                 statItemOne = "devRing",
                 statItemTwo = "devAmulet",
-                statItemThree = "devCat"
-
             };
     
             SavePlayerStats(activePlayer, playerStats);
