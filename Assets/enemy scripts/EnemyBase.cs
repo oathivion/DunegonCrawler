@@ -19,12 +19,16 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] float alertDistance = 6f;
     [SerializeField] float attackDistance = .9f;
     /// <summary>
+    /// The layers that obstruct the enemies vision
+    /// </summary>
+    [SerializeField] LayerMask walls;
+    /// <summary>
     /// time in seconds between attacks
     /// </summary>
     [SerializeField] float attackSpeed = .5f;
     
 
-    bool alert = true;
+    bool alert = false;
     Coroutine attackPatternRoutine;
     void Start()
     {
@@ -42,13 +46,16 @@ public class EnemyBase : MonoBehaviour
     void Update()
     {
         Vector2 dir = player.transform.position - transform.position;
+        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
         dir.Normalize();
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, alertDistance);
-        if (hit.transform.gameObject.CompareTag("Player"))
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, distanceToPlayer, walls);
+        
+        if (!hit && distanceToPlayer < alertDistance)
         {
-            Debug.Log("alerted!!");
+            // Debug.Log("alerted!!");
             alert = true;
         }
+
         // Debug.Log(Vector2.Distance(transform.position, player.transform.position));
         if(Vector2.Distance(transform.position, player.transform.position) < attackDistance)
         {
