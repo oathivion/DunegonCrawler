@@ -16651,11 +16651,11 @@ MonoBehaviour:
   moveSpeed: 2.3
   stopWhileInRange: 1
   attackDamage: 10
-  alertDistance: 3
+  alertDistance: 5
   attackDistance: 0.9
   walls:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1048576
   attackSpeed: 0.5
 --- !u!1 &1585854769
 GameObject:
@@ -17206,12 +17206,12 @@ PrefabInstance:
     - target: {fileID: 5472586244313904543, guid: 48445c014f9199445b27882fbb836507,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.47
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 5472586244313904543, guid: 48445c014f9199445b27882fbb836507,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.69
+      value: 6.67
       objectReference: {fileID: 0}
     - target: {fileID: 5472586244313904543, guid: 48445c014f9199445b27882fbb836507,
         type: 3}
@@ -17253,7 +17253,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1404891939392162363, guid: 48445c014f9199445b27882fbb836507, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

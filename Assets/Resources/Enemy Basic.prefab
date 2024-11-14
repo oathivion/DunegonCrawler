@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5472586244313904543}
   - component: {fileID: 7035944011014834037}
-  - component: {fileID: 1404891939392162363}
+  - component: {fileID: 6817788358969649121}
   - component: {fileID: 5127736640912064241}
   m_Layer: 0
-  m_Name: agent
+  m_Name: Enemy Basic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1404891939392162363
+--- !u!114 &6817788358969649121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,10 +66,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 4797068726922856621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82ecd4cdf09a89648a711f936b2bf5e2, type: 3}
+  m_Script: {fileID: 11500000, guid: c30d81c921179684d84eeeeac7aacd3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  player: {fileID: 0}
+  moveSpeed: 2.3
+  stopWhileInRange: 1
+  attackDamage: 10
+  alertDistance: 5
+  attackDistance: 0.9
+  walls:
+    serializedVersion: 2
+    m_Bits: 1048576
+  attackSpeed: 0.5
 --- !u!50 &5127736640912064241
 Rigidbody2D:
   serializedVersion: 4
