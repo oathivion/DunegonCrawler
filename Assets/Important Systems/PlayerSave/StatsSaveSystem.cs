@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerStats
@@ -18,12 +19,11 @@ public class PlayerStats
     public string armor; // Current Armor Equipped
     public string statItemOne; // First Item that can modify stats
     public string statItemTwo;
-    public string statItemThree;
 }
 
 public class StatsSaveSystem : MonoBehaviour
 {
-    public string activePlayer = "default";
+    private string activePlayer = "dev";
 
     private static readonly string encryptionKey = "WkmOknkz0BLkyC7p82NsivQ8NvwVor17"; //Encyrption Key. Please Don't Change. It will break my save data.
     private PlayerStats loadedStats; 
@@ -31,6 +31,10 @@ public class StatsSaveSystem : MonoBehaviour
     void Awake ()
     {
         LoadActivePlayer();
+    }
+
+    public void SetActivePlayer(string newActivePlayer) {
+        activePlayer = newActivePlayer;
     }
 
     public object GetStat (string whatStatToGet) { //Main Function to Get Player Stats From save File. It takes in a string Becaues of this you need to cast the result to the proper datatype.
@@ -247,10 +251,10 @@ public class StatsSaveSystem : MonoBehaviour
 
     private void CreatePlayer() { //This is a temporary script for testing purposes. Player Creation will be moved to a different script in the future.
             PlayerStats playerStats = new PlayerStats {
-                playerName = "default",
+                playerName = "dev",
                 maxHealth = 20,
                 experience = 0,
-                level = 0,
+                level = 1,
                 strength = 10,
                 dexterity = 10,
                 constitution = 10,
@@ -259,8 +263,6 @@ public class StatsSaveSystem : MonoBehaviour
                 armor = "devArmor",
                 statItemOne = "devRing",
                 statItemTwo = "devAmulet",
-                statItemThree = "devCat"
-
             };
     
             SavePlayerStats(activePlayer, playerStats);
