@@ -17,6 +17,7 @@ public class ItemLoader : MonoBehaviour
         LoadItem((string)statsSaveSystem.GetStat("armor"));
         LoadItem((string)statsSaveSystem.GetStat("statItemOne"));
         LoadItem((string)statsSaveSystem.GetStat("statItemTwo"));
+        LoadItem((string)statsSaveSystem.GetStat("statItemThree"));
         LoadItem((string)statsSaveSystem.GetStat("weaponOne"));
         LoadItem((string)statsSaveSystem.GetStat("weaponTwo"));
     }
