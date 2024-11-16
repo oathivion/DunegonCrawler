@@ -6,19 +6,12 @@ public class ResizeMaskForBoss : MonoBehaviour
 {
     [SerializeField] GameObject bossTriger;
 
-    public void OnTriggerEnter(Collider collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Im getting triggerd");
-    }
-
-    /*
-    {
-        
         if (collision.gameObject.Equals(bossTriger))
         {
             Debug.Log("Entered The BOOOSSS ROOOMM");
             transform.localScale = new Vector2(30, 30);
         }
     }
-    */
 }
