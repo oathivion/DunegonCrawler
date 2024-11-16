@@ -74,6 +74,7 @@ public class SaveSlotMenu : MonoBehaviour
         if (playerStats != null)
         {
             statsSaveSystem.SetActivePlayer(playerName);
+            PlayerPrefs.SetString("ActivePlayer", playerName);
         }
         else
         {

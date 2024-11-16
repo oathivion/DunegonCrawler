@@ -37,9 +37,24 @@ public class StatsSaveSystem : MonoBehaviour
         activePlayer = newActivePlayer;
     }
 
-    public object GetStat (string whatStatToGet) { //Main Function to Get Player Stats From save File. It takes in a string Becaues of this you need to cast the result to the proper datatype.
-       return typeof(PlayerStats).GetField(whatStatToGet).GetValue(loadedStats); 
+    public object GetStat(string whatStatToGet)
+    {
+        if (loadedStats == null)
+        {
+            Debug.LogError("Player stats have not been loaded. Ensure the stats are loaded before accessing them.");
+            return null; // Return early to prevent further errors
+        }
+
+        var fieldInfo = typeof(PlayerStats).GetField(whatStatToGet);
+        if (fieldInfo == null)
+        {
+            Debug.LogError($"Field {whatStatToGet} does not exist in PlayerStats.");
+            return null;
+        }
+
+        return fieldInfo.GetValue(loadedStats);
     }
+        
 
     public void ModifyStat(string whatToModify, int byHowMuch) { //This Function Modifies an IntergerStat by adding it to a number. To Subtract use a negative number as input
         var fieldInfo = typeof(PlayerStats).GetField(whatToModify);
@@ -261,7 +276,7 @@ public class StatsSaveSystem : MonoBehaviour
                 weaponOne = "devSword",
                 weaponTwo = "devBow",
                 armor = "devArmor",
-                statItemOne = "devRing",
+                statItemOne = "speedRing",
                 statItemTwo = "devAmulet",
             };
     
