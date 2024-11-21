@@ -21261,7 +21261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1230091911}
-  lerpSpeed: 1
+  lerpSpeed: 2
 --- !u!4 &367669479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: 713b33322b495794e92184973ece3034,
