@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float projectileSpeed; //The speed the projectile will go
-    [SerializeField] private string whoShouldIHitTag; //What Tag should I check for when compairing damage
-    [SerializeField] private string whoShouldIIngnoreTag; //Who should I ignore.
-    [SerializeField] private float damage; //How Much Damage Should I hit
-    [SerializeField] private float despawnTime; //How long the projectile is live
+    public float projectileSpeed; //The speed the projectile will go
+    public string whoShouldIHitTag; //What Tag should I check for when compairing damage
+    public string whoShouldIIngnoreTag; //Who should I ignore.
+    public float damage; //How Much Damage Should I hit
+    public float despawnTime; //How long the projectile is live
 
     private Rigidbody2D projectileBody;
     private Vector2 shootDirection;

@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangedEnemy : MonoBehaviour
+public class RangedEnemy : EnemyBase
 {
-    // Start is called before the first frame update
-    void Start()
+    ShootProjectile shootingControler;
+
+    private void Awake()
     {
-        
+        shootingControler = GetComponentInChildren<ShootProjectile>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void attack()
     {
-        
+        Projectile projectile = shootingControler.shootAt(player.transform.position);
+        projectile.damage = attackDamage;
+        projectile.whoShouldIHitTag = player.tag;
     }
 }
