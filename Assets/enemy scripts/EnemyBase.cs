@@ -61,7 +61,7 @@ public class EnemyBase : MonoBehaviour
         {
             if(attackPatternRoutine == null)
             {
-                attackPatternRoutine = StartCoroutine(attackPattern(attackDamage));
+                attackPatternRoutine = StartCoroutine(attackPattern());
             }
             
         }
@@ -90,7 +90,7 @@ public class EnemyBase : MonoBehaviour
         }
     }
 
-    IEnumerator attackPattern()
+    public IEnumerator attackPattern()
     {
         while (true)
         {
