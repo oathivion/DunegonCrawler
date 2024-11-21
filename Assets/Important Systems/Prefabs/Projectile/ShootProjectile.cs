@@ -6,14 +6,16 @@ public class ShootProjectile : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab; //What to shoot?
     [SerializeField] private Transform shootTransfrom; //Where to shoot from?
+    [SerializeField] private bool IsEnemy = false;
 
     void Update(){
-        if(Input.GetMouseButtonDown(1)) {
+        
+        if(Input.GetMouseButtonDown(1) && !IsEnemy) {
             Shoot();
         }
     }
 
-    void Shoot() {
+    public void Shoot() {
         // Get mouse position in world coordinates
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
