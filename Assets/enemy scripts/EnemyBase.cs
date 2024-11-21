@@ -9,15 +9,15 @@ public class EnemyBase : MonoBehaviour
     /// <summary>
     /// Player should be assigned automaticaly!!! this is temporary
     /// </summary>
-    [SerializeField] GameObject player;
+    public GameObject player;
     HealthScript playerHealth;
     [Header("Movement")]
-    [SerializeField] float moveSpeed = 5f;
-    [SerializeField] bool stopWhileInRange = true;
+    public float moveSpeed = 5f;
+    public bool stopWhileInRange = true;
     [Header("Attack")]
-    [SerializeField] float attackDamage = 10f;
-    [SerializeField] float alertDistance = 6f;
-    [SerializeField] float attackDistance = .9f;
+    public float attackDamage = 10f;
+    public float alertDistance = 6f;
+    public float attackDistance = .9f;
     /// <summary>
     /// The layers that obstruct the enemies vision
     /// </summary>
@@ -61,7 +61,7 @@ public class EnemyBase : MonoBehaviour
         {
             if(attackPatternRoutine == null)
             {
-                attackPatternRoutine = StartCoroutine(attackPattern(attackDamage));
+                attackPatternRoutine = StartCoroutine(attackPattern());
             }
             
         }
@@ -80,7 +80,7 @@ public class EnemyBase : MonoBehaviour
         }
     }
 
-    void attack()
+    public virtual void attack()
     {
         Debug.Log("Attacking Player");
         if (playerHealth != null)
@@ -90,7 +90,7 @@ public class EnemyBase : MonoBehaviour
         }
     }
 
-    IEnumerator attackPattern(float damage)
+    public IEnumerator attackPattern()
     {
         while (true)
         {

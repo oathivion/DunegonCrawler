@@ -18,14 +18,22 @@ public class ShootProjectile : MonoBehaviour
     public void Shoot() {
         // Get mouse position in world coordinates
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        shootAt(mousePosition);
+    }
+
+    public Projectile shootAt(Vector2 position)
+    {
+        // Get mouse position in world coordinates
 
         //Get direction from player to click location
-        Vector2 shootDirection = (mousePosition - new Vector2(transform.position.x, transform.position.y)).normalized;
+        Vector2 shootDirection = (position - new Vector2(transform.position.x, transform.position.y)).normalized;
         float shootAngle = Mathf.Atan2(shootDirection.x, shootDirection.y) * Mathf.Rad2Deg;
 
         //Creates The Projectile and applies rotation.
         GameObject projectile = Instantiate(projectilePrefab, shootTransfrom.position, Quaternion.identity);
-        projectile.GetComponent<Projectile>().SetDirection(shootDirection);
-        
+        Projectile _projectile = projectile.GetComponent<Projectile>();
+        _projectile.SetDirection(shootDirection);
+
+        return _projectile;
     }
 }
