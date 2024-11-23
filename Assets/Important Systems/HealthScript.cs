@@ -33,7 +33,7 @@ public class HealthScript : MonoBehaviour
             Instantiate(deadScreen);
 
             Thread.Sleep(3000);
-            SceneManager.LoadScene("Sample Scene");
+            SceneManager.LoadScene("SampleScene");
         }
     }
 
