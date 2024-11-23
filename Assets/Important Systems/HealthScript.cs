@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthScript : MonoBehaviour
 {
     [SerializeField] public float startingHealth; //Starting Health For the Character
+    [SerializeField] private bool isPlayer;
+    [SerializeField] private GameObject deadScreen;
 
     private float currentHealth; //Current Health for the Character
 
@@ -23,9 +27,14 @@ public class HealthScript : MonoBehaviour
     }
 
     private void KillCharacter() {
-        //Placeholder Function
-        Debug.Log(gameObject.name + "Is now Dead");
-        return;
+        if (isPlayer) {
+            currentHealth = startingHealth;
+
+            Instantiate(deadScreen);
+
+            Thread.Sleep(3000);
+            SceneManager.LoadScene("Sample Scene");
+        }
     }
 
     public float GetHealth()
