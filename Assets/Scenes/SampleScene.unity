@@ -175,9 +175,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthText: {fileID: 1163171983}
   healthBar: {fileID: 1090165090}
-  healthBarPosition: {x: 0, y: 0}
+  healthBarStartPosition: {x: 0, y: 0}
   maxBarWidth: 0
   currentBarWidth: 0
+  healthBarCurrentPosition: {x: 0, y: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,6 +1710,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1223974017}
+    - targetCorrespondingSourceObject: {fileID: 5628018141983903104, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1223974018}
   m_SourcePrefab: {fileID: 100100000, guid: ef67ba864d1ecc042b5f4cf48455c0a6, type: 3}
 --- !u!1 &1223974016 stripped
 GameObject:
@@ -1729,7 +1734,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 20
-  currentHealth: 0
+--- !u!114 &1223974018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223974016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2253a000f0dd6f4f9123761737dcb00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1227470399
 PrefabInstance:
   m_ObjectHideFlags: 0
