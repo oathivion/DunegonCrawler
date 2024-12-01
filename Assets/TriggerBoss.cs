@@ -9,7 +9,7 @@ public class TriggerBoss : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            boss.GetComponent<SnowManMovement>().bossTime = true;
+            boss.SetActive(true);
         }
     }
 }
