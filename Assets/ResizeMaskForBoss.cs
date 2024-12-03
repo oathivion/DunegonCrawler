@@ -11,7 +11,7 @@ public class ResizeMaskForBoss : MonoBehaviour
         if (collision.gameObject.Equals(bossTriger))
         {
             Debug.Log("Entered The BOOOSSS ROOOMM");
-            transform.localScale = new Vector2(30, 30);
+            transform.localScale = new Vector2(43, 43);
         }
     }
 }

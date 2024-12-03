@@ -11,11 +11,18 @@ public class TrapActivation : MonoBehaviour
     bool hidden;
     [SerializeField] Sprite cover;
     [SerializeField] Sprite unCovered;
-
+    [SerializeField] bool findPlayer;
+    GameObject player;
     public void Start()
     {
         hidden = true;
         gameObject.GetComponent<SpriteRenderer>().sprite = cover;
+        if (findPlayer)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            validObjects.Add(player);
+        }
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

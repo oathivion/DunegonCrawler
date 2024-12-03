@@ -5,19 +5,27 @@ using UnityEngine;
 public class SnowManSpikes : MonoBehaviour
 {
     float startTime;
+    [SerializeField] float boxWidth;
+    [SerializeField] float boxHeight;
     [SerializeField] float timeDelay;
     float timePercent;
     [SerializeField] GameObject objectToSpawn;
-    [SerializeField] Vector2[] corners;
+    Vector2[] corners = new Vector2[] {new Vector2(0,0), new Vector2(0,0)};
+    GameObject player;
+    Vector2 playerPosition;
     // Start is called before the first frame update
     void Start()
     {
         startTime = Time.time;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+        playerPosition = player.transform.position;
+        corners[0] = new Vector2(playerPosition.x - (boxWidth / 2), playerPosition.y - (boxHeight / 2));
+        corners[1] = new Vector2(playerPosition.x + (boxWidth / 2), playerPosition.y + (boxHeight / 2));
         timePercent = (Time.time - startTime) / timeDelay;
         if (timePercent >= 1)
         {

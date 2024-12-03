@@ -39,7 +39,7 @@ public class IceSpikeScript : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && sprite.enabled)
         {
             collision.gameObject.GetComponent<HealthScript>().TakeDamage(damage);
         }

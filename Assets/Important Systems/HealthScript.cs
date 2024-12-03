@@ -10,11 +10,13 @@ public class HealthScript : MonoBehaviour
     [SerializeField] public float startingHealth; //Starting Health For the Character
     [SerializeField] private bool isPlayer;
     [SerializeField] private GameObject deadScreen;
+    bool isDead;
 
     private float currentHealth; //Current Health for the Character
 
     void Start () {
         currentHealth = startingHealth; //Initializes Current Health
+        isDead = false;
     }
 
     public void TakeDamage (float damageTaken) {
@@ -27,6 +29,7 @@ public class HealthScript : MonoBehaviour
     }
 
     private void KillCharacter() {
+        isDead = true;
         if (isPlayer) {
             currentHealth = startingHealth;
 
@@ -40,5 +43,9 @@ public class HealthScript : MonoBehaviour
     public float GetHealth()
     {
         return currentHealth;
+    }
+    public bool GetDeath()
+    {
+        return isDead;
     }
 }
