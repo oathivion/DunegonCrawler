@@ -15,9 +15,20 @@ public class RangedEnemy : EnemyBase
 
     public override void attack()
     {
+        Debug.Log("ranged attasck");
         Projectile projectile = shootingControler.shootAt(player.transform.position);
         projectile.damage = attackDamage;
         projectile.whoShouldIHitTag = player.tag;
         projectile.projectileSpeed = projectileSpeed;
+    }
+
+    public override IEnumerator attackPattern()
+    {
+        while (true)
+        {
+            attack();
+            yield return new WaitForSeconds(attackSpeed);
+        }
+        
     }
 }

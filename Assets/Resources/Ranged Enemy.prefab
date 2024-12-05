@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1105207620199603781}
   - component: {fileID: 962011369250310214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: projectile source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,12 +39,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6649723842734716493}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43dcf93d61e62bf4aa3f78387ba2630f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 3443481063465263200, guid: b323aa8ec76457b479d5ed184f2259e1,
+    type: 3}
   shootTransfrom: {fileID: 643144424448326156}
   IsEnemy: 1
 --- !u!1001 &4836408894907944851
@@ -110,15 +111,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9055156381786778396, guid: 48445c014f9199445b27882fbb836507,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6817788358969649121, guid: 48445c014f9199445b27882fbb836507, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5472586244313904543, guid: 48445c014f9199445b27882fbb836507,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1105207620199603781}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4797068726922856621, guid: 48445c014f9199445b27882fbb836507,
+        type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 4485427399839265679}
   m_SourcePrefab: {fileID: 100100000, guid: 48445c014f9199445b27882fbb836507, type: 3}
+--- !u!1 &111742081174095678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4797068726922856621, guid: 48445c014f9199445b27882fbb836507,
+    type: 3}
+  m_PrefabInstance: {fileID: 4836408894907944851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4485427399839265679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111742081174095678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fdc59a9102af74995a434c26129511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  moveSpeed: 2.3
+  stopWhileInRange: 1
+  attackDamage: 10
+  alertDistance: 7
+  attackDistance: 6
+  walls:
+    serializedVersion: 2
+    m_Bits: 1048576
+  attackSpeed: 0.5
+  projectileSpeed: 0.5
 --- !u!4 &643144424448326156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5472586244313904543, guid: 48445c014f9199445b27882fbb836507,

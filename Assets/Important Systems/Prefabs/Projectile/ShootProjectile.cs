@@ -23,7 +23,6 @@ public class ShootProjectile : MonoBehaviour
 
     public Projectile shootAt(Vector2 position)
     {
-        // Get mouse position in world coordinates
 
         //Get direction from player to click location
         Vector2 shootDirection = (position - new Vector2(transform.position.x, transform.position.y)).normalized;
