@@ -7,8 +7,8 @@ public class PlayerHealthTrack : MonoBehaviour
 {
     HealthScript playerHealth;
     [SerializeField] GameObject healthText;
-
-
+    [SerializeField] GameObject tracker;
+    [SerializeField] bool trackPlayer;
     //Helth Bar variables
     [SerializeField] GameObject healthBar;
     public Vector2 healthBarStartPosition;
@@ -19,7 +19,15 @@ public class PlayerHealthTrack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthScript>();
+        if (trackPlayer)
+        {
+            playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthScript>();
+        }
+        else
+        {
+            playerHealth = tracker.GetComponent<HealthScript>();
+        }
+        
         healthBarStartPosition = healthBar.transform.localPosition;
         maxBarWidth = healthBar.transform.localScale.x;
     }

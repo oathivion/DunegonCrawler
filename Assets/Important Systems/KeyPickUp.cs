@@ -16,7 +16,7 @@ public class KeyPickUp : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         particels = transform.GetComponentInChildren<ParticleSystem>().gameObject;
     }
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision) 
     {
         if (collision.gameObject == player)
         {
