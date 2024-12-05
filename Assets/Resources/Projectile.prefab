@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d39c0730a1d034180d9dd467ea796e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 0.7
+  projectileSpeed: 0.9
   whoShouldIHitTag: Player
   whoShouldIIngnoreTag: Enemy
   wallLayer:
