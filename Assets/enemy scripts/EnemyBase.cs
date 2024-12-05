@@ -25,7 +25,7 @@ public class EnemyBase : MonoBehaviour
     /// <summary>
     /// time in seconds between attacks
     /// </summary>
-    [SerializeField] float attackSpeed = .5f;
+    public float attackSpeed = .5f;
     
 
     bool alert = false;
@@ -90,7 +90,7 @@ public class EnemyBase : MonoBehaviour
         }
     }
 
-    public IEnumerator attackPattern()
+    public virtual IEnumerator attackPattern()
     {
         while (true)
         {

@@ -7,7 +7,11 @@ public class Projectile : MonoBehaviour
 {
     public float projectileSpeed; //The speed the projectile will go
     public string whoShouldIHitTag; //What Tag should I check for when compairing damage
+    /// <summary>
+    /// This doesn't work in my opinion if your going to use this kind of collision detection -Jordan
+    /// </summary>
     public string whoShouldIIngnoreTag; //Who should I ignore.
+    public LayerMask wallLayer;
     public float damage; //How Much Damage Should I hit
     public float despawnTime; //How long the projectile is live
 
@@ -28,20 +32,24 @@ public class Projectile : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) { //This Function Handles This Object Hitting Something Else
-        if(other.CompareTag(whoShouldIHitTag)) {
-            other.GetComponent<HealthScript>().TakeDamage(damage);
-        }
-        else if(other.CompareTag(whoShouldIIngnoreTag)) {
-            return;
-        }
-        else {
+        Debug.Log("Hit " + other.name);
+        if (other.CompareTag(whoShouldIHitTag))
+        {
+            Debug.Log("Hit Player");
+            if(TryGetComponent<HealthScript>(out HealthScript playerHealth)){
+                playerHealth.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }else if ((wallLayer.value & (1 << other.gameObject.layer)) != 0)
+        {
+            Debug.Log("Hit a wall");
             Destroy(gameObject);
         }
     }
 
     void Despawn()
     {
-        // Destroy the GameObject
+        Debug.Log("despawn");
         Destroy(gameObject);
     }
 }
