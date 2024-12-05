@@ -2567,6 +2567,26 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 5628018141983903116, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
         type: 3}
+      propertyPath: m_Size.x
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628018141983903116, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628018141983903116, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628018141983903116, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628018141983903116, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5
       objectReference: {fileID: 0}
@@ -2691,11 +2711,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea49ddb6d680e241b99773516d74da0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: fb22d1d91b6f3c241b583ab29696dd13, type: 3}
-  - {fileID: 21300000, guid: 7f3816a7cd1abd34f8a782473c084b2d, type: 3}
-  - {fileID: 21300000, guid: 811651f878511bb4fb179efa882d79d0, type: 3}
-  - {fileID: 21300000, guid: d878843ed29160c418b46ae5124fcc5e, type: 3}
+  downSprites:
+  - {fileID: 21300000, guid: 355cbc2f7b51f4b42ae4485182f01d4b, type: 3}
+  - {fileID: 21300000, guid: 3b97b66c324bdaa45bfa8e99a6ae2a65, type: 3}
+  - {fileID: 21300000, guid: d8fb4aaf9632a684f98ca3a56912774e, type: 3}
+  - {fileID: 21300000, guid: 0eded60e1d523204ba1c2108586566db, type: 3}
+  upSprites:
+  - {fileID: 21300000, guid: dacdad0b20b3fde4f9aecb7326249c03, type: 3}
+  - {fileID: 21300000, guid: d63dbd971f46ca442bedcbc0f288d6b6, type: 3}
+  - {fileID: 21300000, guid: 7d2341b49315f31439baa68225c74b2e, type: 3}
+  - {fileID: 21300000, guid: edaa04b10617d454eb172533908663a1, type: 3}
+  leftSprites: []
+  rightSprites:
+  - {fileID: 21300000, guid: a34e1ca308f335d4f9259a08876fab19, type: 3}
+  - {fileID: 21300000, guid: ce927e8d90d5dd6489ada6379791268f, type: 3}
+  - {fileID: 21300000, guid: ed2bbb03d5ada244d9687a2d72b3ce91, type: 3}
+  - {fileID: 21300000, guid: ade836d03ac7ed541b8d2fe4274522a1, type: 3}
 --- !u!1 &1272649666
 GameObject:
   m_ObjectHideFlags: 0
