@@ -9,6 +9,7 @@ public class SnowmanDeath : MonoBehaviour
     public SpriteRenderer[] childSpriteRenders;
     HealthScript healthScript;
     [SerializeField] bool changeColorOnDeath;
+    [SerializeField] GameObject exitDoor;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class SnowmanDeath : MonoBehaviour
     }
     void Die()
     {
+        exitDoor.SetActive(false);
         selfSprite.color = new Color(Color.red.r, Color.red.g, Color.red.b, .2f);
         foreach (SpriteRenderer sprite in childSpriteRenders)
         {
