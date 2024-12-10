@@ -1,124 +1,85 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    private float facingWhatDirection; // Change to float to avoid precision issues
-    private Vector2 facingWhatVector; // Variable used For Calculations
+    private Vector2 facingDirection = Vector2.down; // Default facing direction
     private Collider2D swordCollider;
-    private bool isJabbing; // Lock to prevent multiple jabs
+    private bool isJabbing;
 
-    [SerializeField] private float jabDistance; // How Far to Jab
-    [SerializeField] private float jabTime; // How long to jab
-    [SerializeField] private float damage; // How Much Damage Per Jab
-    [SerializeField] private string whoShouldIHitTag; // What Tag should I check for when comparing damage
-    [SerializeField] private string whoShouldIIngnoreTag; // Who should I ignore
+    [SerializeField] private float jabDistance = 1f; // How far to jab
+    [SerializeField] private float jabTime = 0.2f; // How long to jab
+    [SerializeField] private float damage = 10f; // Damage per jab
+    [SerializeField] private string targetTag = "Enemy"; // Tag to apply damage
+    [SerializeField] private string ignoreTag = "Player"; // Tag to ignore
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
-    void Awake()
+    private void Awake()
     {
         swordCollider = GetComponent<Collider2D>();
         swordCollider.enabled = false;
         isJabbing = false;
+        spriteRenderer.enabled = false;
     }
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetKey(KeyCode.A)) // Left
+        HandleInput();
+        if (Input.GetMouseButtonDown(0) && !isJabbing)
         {
-            facingWhatDirection = -90f;
-            RotateSword(facingWhatDirection);
-        }
-        if (Input.GetKey(KeyCode.D)) // Right
-        {
-            facingWhatDirection = 90f;
-            RotateSword(facingWhatDirection);
-        }
-        if (Input.GetKey(KeyCode.W)) // Up
-        {
-            facingWhatDirection = 180f;
-            RotateSword(facingWhatDirection);
-        }
-        if (Input.GetKey(KeyCode.S)) // Down
-        {
-            facingWhatDirection = 0f;
-            RotateSword(facingWhatDirection);
-        }
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (!isJabbing) // Only jab if not already jabbing
-            {
-                JabSword();
-            }
+            StartCoroutine(JabSword());
         }
     }
 
-    private void RotateSword(float rotateDir)
+    private void HandleInput()
     {
-        transform.rotation = Quaternion.Euler(0, 0, rotateDir);
+        if (Input.GetKey(KeyCode.W)) facingDirection = Vector2.up;
+        else if (Input.GetKey(KeyCode.S)) facingDirection = Vector2.down;
+        else if (Input.GetKey(KeyCode.A)) facingDirection = Vector2.left;
+        else if (Input.GetKey(KeyCode.D)) facingDirection = Vector2.right;
+
+        RotateSword();
     }
 
-    private void JabSword()
+    private void RotateSword()
     {
-        isJabbing = true; // Lock the jab
+        float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle + 90f); // Adjust by -90 degrees
+    }
+
+
+    private IEnumerator JabSword()
+    {
+        isJabbing = true;
+        spriteRenderer.enabled = true;
         swordCollider.enabled = true;
-        facingWhatVector = ConvertFacingWhatDirectionToVector2(facingWhatDirection);
-        StartCoroutine(JabSwordMovement());
-    }
 
-    private IEnumerator JabSwordMovement()
-    {
-        Vector3 startPos = transform.position; // Store the starting position
-        Vector3 endPos = startPos + (Vector3)facingWhatVector * jabDistance; // Target position
+        Vector3 startPos = transform.localPosition;
+        Vector3 endPos = startPos + (Vector3)facingDirection * jabDistance;
+
         float elapsedTime = 0;
-
-        // Move the sword forward over time
         while (elapsedTime < jabTime)
         {
-            transform.position = Vector3.Lerp(startPos, endPos, elapsedTime / jabTime);
+            transform.localPosition = Vector3.Lerp(startPos, endPos, elapsedTime / jabTime);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        // Ensure the sword reaches the end position
-        transform.position = endPos;
-
-        // Optional small delay before resetting
-        yield return new WaitForSeconds(0.1f);
-
-        // Reset the sword
-        transform.position = startPos;
+        transform.localPosition = startPos;
         swordCollider.enabled = false;
+        isJabbing = false;
+        spriteRenderer.enabled = false;
 
-        isJabbing = false; // Unlock the jab
     }
 
-    private Vector2 ConvertFacingWhatDirectionToVector2(float facingWhatDirection)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        switch (facingWhatDirection)
+        if (other.CompareTag(targetTag))
         {
-            case 0f:
-                return Vector2.down;
-            case -90f:
-                return Vector2.left;
-            case 90f:
-                return Vector2.right;
-            case 180f:
-                return Vector2.up;
-            default:
-                Debug.LogWarning("FacingWhatDirection Not Properly Set, Returning Vector2.zero");
-                return Vector2.zero;
+            var health = other.GetComponent<HealthScript>();
+            health?.TakeDamage(damage);
         }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag(whoShouldIHitTag))
-        {
-            other.GetComponent<HealthScript>()?.TakeDamage(damage);
-        }
-        else if (other.CompareTag(whoShouldIIngnoreTag))
+        else if (other.CompareTag(ignoreTag))
         {
             return;
         }

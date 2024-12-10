@@ -162,8 +162,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d39c0730a1d034180d9dd467ea796e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 10
+  projectileSpeed: 17
   whoShouldIHitTag: Enemy
   whoShouldIIngnoreTag: Player
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 1
   damage: 5
   despawnTime: 10
