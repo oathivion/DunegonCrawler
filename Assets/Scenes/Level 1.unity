@@ -15015,6 +15015,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -19, y: 10, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -17, y: 10, z: 0}
     second:
       serializedVersion: 2
@@ -17587,21 +17597,21 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1403
+  - m_RefCount: 1404
     m_Data: {fileID: 11400000, guid: 57bcb8d97b014434ea029ca4ff35b374, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 318
     m_Data: {fileID: 11400000, guid: 5acd9abbd68dd634a946849201f343a1, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1403
+  - m_RefCount: 1404
     m_Data: {fileID: 21300000, guid: f8ff554e08e68fe458bca43a8fafb10d, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 318
     m_Data: {fileID: 21300000, guid: 42d2fc0775ec3554ba088a3559b99742, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1721
+  - m_RefCount: 1722
     m_Data:
       e00: 1
       e01: 0
@@ -17620,7 +17630,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1721
+  - m_RefCount: 1722
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -29350,6 +29360,7 @@ GameObject:
   - component: {fileID: 1269187954}
   - component: {fileID: 1269187956}
   - component: {fileID: 1269187955}
+  - component: {fileID: 1269187957}
   m_Layer: 0
   m_Name: Snow Man (Angry)
   m_TagString: Enemy
@@ -29369,6 +29380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd73686e2244098428c6c29fb99e092c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  contactDamage: 1
   speed: 1
   timeMin: 1
   timeMax: 3
@@ -29559,9 +29571,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18819cdd7df64104ba9c0856e18468dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 150
+  startingHealth: 50
   isPlayer: 0
   deadScreen: {fileID: 0}
+--- !u!61 &1269187957
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269187948}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.77}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.8828125}
+    newSize: {x: 1, y: 0.8828125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.72, y: 2.41}
+  m_EdgeRadius: 0
 --- !u!1001 &1273426386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45589,7 +45646,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: b823debd04fd63f4d8e579210fe0ff20,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8941411
+      value: 1.85
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: b823debd04fd63f4d8e579210fe0ff20,
         type: 3}

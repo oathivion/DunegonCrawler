@@ -10,6 +10,7 @@ public class HealthScript : MonoBehaviour
     [SerializeField] public float startingHealth; //Starting Health For the Character
     [SerializeField] private bool isPlayer;
     [SerializeField] private GameObject deadScreen;
+    DeathManager deathManager;
     bool isDead;
 
     private float currentHealth; //Current Health for the Character
@@ -17,6 +18,11 @@ public class HealthScript : MonoBehaviour
     void Start () {
         currentHealth = startingHealth; //Initializes Current Health
         isDead = false;
+        if (isPlayer)
+        {
+            deathManager = GetComponent<DeathManager>();
+        }
+        
     }
 
     public void TakeDamage (float damageTaken) {
@@ -32,11 +38,7 @@ public class HealthScript : MonoBehaviour
         isDead = true;
         if (isPlayer) {
             currentHealth = startingHealth;
-
-            Instantiate(deadScreen);
-
-            Thread.Sleep(3000);
-            SceneManager.LoadScene("SampleScene");
+            deathManager.CleanUp();
         }
     }
 

@@ -12,14 +12,14 @@ public class WizardManager : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         wizardTracker = player.GetComponent<WizardTracker>();
-        for (int i = 0; i < transform.childCount; i++)
+        if (wizardTracker.GetWizards() == 1)
         {
-            wizards.Add(transform.GetChild(0).gameObject);
-
+            transform.GetChild(0).gameObject.SetActive(true);
         }
-        for (int i = 0; i < wizardTracker.GetWizards(); i++)
+        if (wizardTracker.GetWizards()==2)
         {
-            wizards[i].SetActive(true);
+            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(1).gameObject.SetActive(true);
         }
 
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class SnowManMovement : MonoBehaviour
 {
     GameObject player;
+    [SerializeField] int contactDamage;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,5 +45,9 @@ public class SnowManMovement : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         direction = direction * -1;
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<HealthScript>().TakeDamage(contactDamage);
+        }
     }
 }
