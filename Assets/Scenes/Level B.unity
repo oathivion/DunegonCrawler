@@ -37174,7 +37174,7 @@ GameObject:
   - component: {fileID: 116472312}
   m_Layer: 8
   m_Name: assassin (25)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37371,7 +37371,7 @@ GameObject:
   - component: {fileID: 133915086}
   m_Layer: 8
   m_Name: assassin (24)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37568,7 +37568,7 @@ GameObject:
   - component: {fileID: 138715037}
   m_Layer: 8
   m_Name: assassin (16)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37765,7 +37765,7 @@ GameObject:
   - component: {fileID: 229451316}
   m_Layer: 8
   m_Name: assassin (15)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37962,7 +37962,7 @@ GameObject:
   - component: {fileID: 282049912}
   m_Layer: 8
   m_Name: assassin (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38249,7 +38249,7 @@ GameObject:
   - component: {fileID: 458796091}
   m_Layer: 8
   m_Name: assassin (18)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38446,7 +38446,7 @@ GameObject:
   - component: {fileID: 474589701}
   m_Layer: 8
   m_Name: assassin (20)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38643,7 +38643,7 @@ GameObject:
   - component: {fileID: 573190906}
   m_Layer: 8
   m_Name: assassin (11)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38840,7 +38840,7 @@ GameObject:
   - component: {fileID: 586553375}
   m_Layer: 8
   m_Name: assassin (10)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39037,7 +39037,7 @@ GameObject:
   - component: {fileID: 627944448}
   m_Layer: 8
   m_Name: assassin (27)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39234,7 +39234,7 @@ GameObject:
   - component: {fileID: 675135671}
   m_Layer: 8
   m_Name: assassin (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39431,7 +39431,7 @@ GameObject:
   - component: {fileID: 1088446173}
   m_Layer: 8
   m_Name: assassin (21)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39628,7 +39628,7 @@ GameObject:
   - component: {fileID: 1117276432}
   m_Layer: 8
   m_Name: assassin (26)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39899,7 +39899,7 @@ GameObject:
   - component: {fileID: 1188169903}
   m_Layer: 8
   m_Name: assassin (12)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40096,7 +40096,7 @@ GameObject:
   - component: {fileID: 1238845227}
   m_Layer: 8
   m_Name: assassin (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40293,7 +40293,7 @@ GameObject:
   - component: {fileID: 1325469855}
   m_Layer: 8
   m_Name: assassin (23)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40490,7 +40490,7 @@ GameObject:
   - component: {fileID: 1330772033}
   m_Layer: 8
   m_Name: assassin (22)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40687,7 +40687,7 @@ GameObject:
   - component: {fileID: 1397383873}
   m_Layer: 8
   m_Name: assassin (14)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40952,7 +40952,7 @@ GameObject:
   - component: {fileID: 1454501736}
   m_Layer: 8
   m_Name: assassin (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41149,7 +41149,7 @@ GameObject:
   - component: {fileID: 1475234783}
   m_Layer: 8
   m_Name: assassin (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41346,7 +41346,7 @@ GameObject:
   - component: {fileID: 1493960500}
   m_Layer: 8
   m_Name: assassin (17)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41543,7 +41543,7 @@ GameObject:
   - component: {fileID: 1534300851}
   m_Layer: 8
   m_Name: assassin (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41740,7 +41740,7 @@ GameObject:
   - component: {fileID: 1535888628}
   m_Layer: 8
   m_Name: assassin (19)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55416,7 +55416,7 @@ GameObject:
   - component: {fileID: 1734563904}
   m_Layer: 8
   m_Name: assassin (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55613,7 +55613,7 @@ GameObject:
   - component: {fileID: 1783026182}
   m_Layer: 8
   m_Name: assassin (13)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55810,7 +55810,7 @@ GameObject:
   - component: {fileID: 2130456768}
   m_Layer: 8
   m_Name: assassin (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

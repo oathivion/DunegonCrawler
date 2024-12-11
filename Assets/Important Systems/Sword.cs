@@ -76,8 +76,18 @@ public class Sword : MonoBehaviour
     {
         if (other.CompareTag(targetTag))
         {
-            var health = other.GetComponent<HealthScript>();
-            health?.TakeDamage(damage);
+            
+            if (other.gameObject.GetComponent<HealthScript>() != null)
+            {
+                var health = other.GetComponent<HealthScript>();
+                health?.TakeDamage(damage);
+            }
+            else if (other.gameObject.GetComponent<EnemyFollow>() !=null)
+            {
+                
+                other.gameObject.GetComponent<EnemyFollow>().TakeDamage(damage);
+            }
+            
         }
         else if (other.CompareTag(ignoreTag))
         {

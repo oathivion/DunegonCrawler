@@ -404,6 +404,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8441509243508058421, guid: 5f60961ead35ff141a430568bcf7675f,
+        type: 3}
+      propertyPath: sceneName
+      value: Credits
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8891524383798671486, guid: 5f60961ead35ff141a430568bcf7675f, type: 3}
     m_RemovedGameObjects: []
@@ -871,6 +876,9 @@ MonoBehaviour:
   knockbackForce: 0
   enemyKnockbackForce: 1
   damageInterval: 0.5
+  knockbackPauseDuration: 1
+  detectionRadius: 5
+  health: 50
 --- !u!61 &904529694
 BoxCollider2D:
   m_ObjectHideFlags: 0
