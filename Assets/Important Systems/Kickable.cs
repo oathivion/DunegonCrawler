@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cainos.PixelArtTopDown_Basic;
-using UnityEditor.Callbacks;
 using UnityEngine;
 
 // works on dynamic Rigidbody2D objects, activated by player movement & pressing "k"

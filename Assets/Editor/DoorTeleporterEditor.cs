@@ -1,7 +1,8 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEditor;
 
-[CustomEditor(typeof(DoorTeleporter))]
+// [CustomEditor(typeof(DoorTeleporter))]
 public class DoorTeleporterEditor : Editor
 {
     public override void OnInspectorGUI()

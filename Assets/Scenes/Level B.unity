@@ -37281,14 +37281,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &116472315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37478,14 +37478,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &133915089
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37675,14 +37675,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &138715040
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37872,14 +37872,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &229451319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38069,14 +38069,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &282049915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38356,14 +38356,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &458796094
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38553,14 +38553,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &474589704
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38750,14 +38750,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &573190909
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38947,14 +38947,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &586553378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39144,14 +39144,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &627944451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39341,14 +39341,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &675135674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39538,14 +39538,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1088446176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39735,14 +39735,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1117276435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40006,14 +40006,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1188169906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40203,14 +40203,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1238845230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40400,14 +40400,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1325469858
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40597,14 +40597,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1330772036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40794,14 +40794,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1397383876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41059,14 +41059,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1454501739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41256,14 +41256,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1475234786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41453,14 +41453,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1493960503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41650,14 +41650,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1534300854
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41847,14 +41847,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1535888631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55433,14 +55433,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1734563902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55720,14 +55720,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &1783026185
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55917,14 +55917,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c309c66dc30664999d898f6babeb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
-  detectionRadius: 5
-  health: 5
+  detectionRadius: 6
+  health: 40
 --- !u!212 &2130456771
 SpriteRenderer:
   m_ObjectHideFlags: 0
