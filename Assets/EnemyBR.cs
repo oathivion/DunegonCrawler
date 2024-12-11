@@ -59,52 +59,57 @@ public class EnemyFollow : MonoBehaviour
                 knockbackTimer = 0f;
             }
         }
-
-        // If the player is in range, check the damage timer and apply damage once per second
-        if (isPlayerInRange)
-        {
-            damageTimer += Time.deltaTime;
-            if (damageTimer >= damageInterval)
-            {
-                ApplyDamage();
-                damageTimer = 0f; // Reset the damage timer
-            }
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            // Apply knockback to the player
-            Rigidbody2D playerRb = collider.gameObject.GetComponent<Rigidbody2D>();
-            if (playerRb != null)
-            {
-                Vector2 knockbackDirection = (collider.transform.position - transform.position).normalized;
-                playerRb.velocity = knockbackDirection * knockbackForce;
-            }
-
-            // Apply knockback to the enemy using AddForce
-            if (enemyRb != null)
-            {
-                Vector2 enemyKnockbackDirection = (transform.position - collider.transform.position).normalized;
-                enemyRb.AddForce(enemyKnockbackDirection * enemyKnockbackForce, ForceMode2D.Impulse);
-            }
-
-            // Set the enemy to be knocked back and stop movement
-            isKnockedBack = true;
-            knockbackTimer = 0f; // Reset the knockback timer
+            ApplyDamageAndKnockback(collider);
         }
     }
 
-    private void ApplyDamage()
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("Player"))
+        {
+            // Increment the damage timer and apply damage only once per second
+            damageTimer += Time.deltaTime;
+            if (damageTimer >= damageInterval)
+            {
+                ApplyDamageAndKnockback(collider);
+                damageTimer = 0f; // Reset the damage timer
+            }
+        }
+    }
+
+    private void ApplyDamageAndKnockback(Collider2D collider)
     {
         // Apply damage to the player
-        HealthScript playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthScript>();
+        HealthScript playerHealth = collider.GetComponent<HealthScript>();
         if (playerHealth != null)
         {
-            playerHealth.TakeDamage(damage); // Apply damage
+            playerHealth.TakeDamage(damage);
         }
+
+        // Apply knockback to the player
+        Rigidbody2D playerRb = collider.GetComponent<Rigidbody2D>();
+        if (playerRb != null)
+        {
+            Vector2 knockbackDirection = (collider.transform.position - transform.position).normalized;
+            playerRb.velocity = knockbackDirection * knockbackForce;
+        }
+
+        // Apply knockback to the enemy using AddForce
+        if (enemyRb != null)
+        {
+            Vector2 enemyKnockbackDirection = (transform.position - collider.transform.position).normalized;
+            enemyRb.AddForce(enemyKnockbackDirection * enemyKnockbackForce, ForceMode2D.Impulse);
+        }
+
+        // Set the enemy to be knocked back and stop movement
+        isKnockedBack = true;
+        knockbackTimer = 0f; // Reset the knockback timer
     }
 
     public void TakeDamage(float damageTaken)

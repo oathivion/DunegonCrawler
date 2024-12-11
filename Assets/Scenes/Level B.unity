@@ -37190,13 +37190,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 2
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &76400455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37295,13 +37295,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &79079635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37400,13 +37400,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &81058064
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37505,13 +37505,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &104743476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37616,7 +37616,7 @@ MonoBehaviour:
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &191805685
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37761,13 +37761,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &353370434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37916,7 +37916,7 @@ MonoBehaviour:
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &481334448
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38015,13 +38015,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &659459805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38120,13 +38120,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &675119126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38225,13 +38225,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &688539108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38330,13 +38330,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &707485718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38435,13 +38435,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 2
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &741804586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38540,13 +38540,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &818437795
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38645,13 +38645,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &912997582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38750,13 +38750,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &934195732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38855,13 +38855,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1001807752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38960,13 +38960,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1085129890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39139,13 +39139,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 2
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1195134204
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39244,13 +39244,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1366624911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39349,13 +39349,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 2
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1410747683
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39522,13 +39522,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1511100191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53086,6 +53086,8 @@ GameObject:
   - component: {fileID: 1734563903}
   - component: {fileID: 1734563902}
   - component: {fileID: 1734563901}
+  - component: {fileID: 1734563905}
+  - component: {fileID: 1734563904}
   m_Layer: 8
   m_Name: assassin (2)
   m_TagString: Untagged
@@ -53106,13 +53108,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 20
+  health: 5
 --- !u!212 &1734563902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53180,6 +53182,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1734563904
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734563900}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
+--- !u!61 &1734563905
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734563900}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1807095272
 GameObject:
   m_ObjectHideFlags: 0
@@ -53211,13 +53303,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1807095274
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53316,13 +53408,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1827468084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53421,13 +53513,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1916520193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53526,13 +53618,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1941699287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53631,13 +53723,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 2
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &1982580517
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53736,13 +53828,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 2
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &2053189200
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53841,13 +53933,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 10
+  damage: 1
   knockbackForce: 5
   enemyKnockbackForce: 3
   damageInterval: 1
   knockbackPauseDuration: 1
   detectionRadius: 5
-  health: 50
+  health: 5
 --- !u!212 &2134197376
 SpriteRenderer:
   m_ObjectHideFlags: 0
